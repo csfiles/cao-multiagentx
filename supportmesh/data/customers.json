@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CUST-001",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "tier": "premium",
+    "since": "2021-03-15",
+    "address": {
+      "street": "123 Maple Street",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101",
+      "country": "US"
+    }
+  },
+  {
+    "id": "CUST-002",
+    "name": "Bob Martinez",
+    "email": "bob.martinez@example.com",
+    "tier": "standard",
+    "since": "2022-07-01",
+    "address": {
+      "street": "456 Oak Avenue",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97201",
+      "country": "US"
+    }
+  },
+  {
+    "id": "CUST-003",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@acmecorp.com",
+    "tier": "enterprise",
+    "since": "2019-11-20",
+    "address": {
+      "street": "789 Tech Boulevard",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105",
+      "country": "US"
+    }
+  }
+]

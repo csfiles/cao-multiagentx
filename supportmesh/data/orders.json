@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ORD-1001",
+    "customer_id": "CUST-001",
+    "status": "delivered",
+    "items": [
+      {
+        "id": "ITEM-001",
+        "name": "Wireless Noise-Cancelling Headphones",
+        "sku": "WNC-HEADPHONES-XL",
+        "quantity": 1,
+        "price": 249.99,
+        "category": "electronics"
+      },
+      {
+        "id": "ITEM-002",
+        "name": "USB-C Charging Cable 2m",
+        "sku": "USB-C-CABLE-2M",
+        "quantity": 2,
+        "price": 19.99,
+        "category": "accessories"
+      }
+    ],
+    "total": 289.97,
+    "currency": "USD",
+    "created_at": "2026-07-28T10:00:00Z",
+    "shipped_at": "2026-07-29T14:30:00Z",
+    "delivered_at": "2026-08-01T11:00:00Z",
+    "tracking_number": "1Z999AA10123456784"
+  },
+  {
+    "id": "ORD-1002",
+    "customer_id": "CUST-001",
+    "status": "shipped",
+    "items": [
+      {
+        "id": "ITEM-003",
+        "name": "Ergonomic Office Chair",
+        "sku": "CHAIR-ERGO-BLK",
+        "quantity": 1,
+        "price": 499.00,
+        "category": "furniture"
+      }
+    ],
+    "total": 499.00,
+    "currency": "USD",
+    "created_at": "2026-08-18T09:00:00Z",
+    "shipped_at": "2026-08-20T16:00:00Z",
+    "delivered_at": null,
+    "tracking_number": "1Z999AA10987654321"
+  },
+  {
+    "id": "ORD-1003",
+    "customer_id": "CUST-002",
+    "status": "delivered",
+    "items": [
+      {
+        "id": "ITEM-004",
+        "name": "Stainless Steel Water Bottle",
+        "sku": "BOTTLE-SS-32OZ",
+        "quantity": 3,
+        "price": 34.99,
+        "category": "kitchen"
+      }
+    ],
+    "total": 104.97,
+    "currency": "USD",
+    "created_at": "2026-08-10T08:00:00Z",
+    "shipped_at": "2026-08-11T12:00:00Z",
+    "delivered_at": "2026-08-13T15:30:00Z",
+    "tracking_number": "9400111899223456789"
+  },
+  {
+    "id": "ORD-1004",
+    "customer_id": "CUST-003",
+    "status": "delivered",
+    "items": [
+      {
+        "id": "ITEM-005",
+        "name": "4K Ultra HD Monitor 27\"",
+        "sku": "MON-4K-27IN",
+        "quantity": 2,
+        "price": 649.00,
+        "category": "electronics"
+      },
+      {
+        "id": "ITEM-006",
+        "name": "Monitor Stand Adjustable",
+        "sku": "MSTAND-ADJ-BLK",
+        "quantity": 2,
+        "price": 79.00,
+        "category": "accessories"
+      }
+    ],
+    "total": 1456.00,
+    "currency": "USD",
+    "created_at": "2026-07-15T11:00:00Z",
+    "shipped_at": "2026-07-16T09:00:00Z",
+    "delivered_at": "2026-07-18T14:00:00Z",
+    "tracking_number": "1Z999BB10456789012"
+  }
+]

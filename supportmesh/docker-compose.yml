@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.mcp
+    image: supportmesh-mcp:latest
+    container_name: supportmesh-mcp
+    ports:
+      - "${SUPPORTMESH_MCP_PORT:-8765}:8765"
+    environment:
+      - SUPPORTMESH_MCP_HOST=0.0.0.0
+      - SUPPORTMESH_MCP_PORT=8765
+      - SUPPORTMESH_DATA_DIR=/app/data
+      - SUPPORTMESH_ALLOW_MUTATIONS=${SUPPORTMESH_ALLOW_MUTATIONS:-false}
+      - SUPPORTMESH_DRY_RUN=${SUPPORTMESH_DRY_RUN:-true}
+      - SUPPORTMESH_LOG_LEVEL=${SUPPORTMESH_LOG_LEVEL:-INFO}
+    volumes:
+      - ./data:/app/data:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; s=socket.socket(); s.connect(('localhost',8765)); s.close()"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
